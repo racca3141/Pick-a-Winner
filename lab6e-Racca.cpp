@@ -49,7 +49,7 @@ int main(void) {
 			enterAnother = 'n';
 		}
 		else if (peopleNum > 1) { 
-			cout << "\nWould you like to add another name? ";
+			cout << "\nWould you like to add another name (y or n)? ";
 			cin >> enterAnother;
 			cin.ignore();
 		}
@@ -61,7 +61,7 @@ int main(void) {
 	do {
 		cout << "\nThe winner is: " << person[rand() % (peopleNum)]; // Possible repetition of a winner.
 
-		cout << "\n\nWould you like to pick another winner from the list? ";
+		cout << "\n\nWould you like to pick another winner from the list (y or n)? ";
 		cin >> goAgain;
 	} while (goAgain == 'y');
 	
